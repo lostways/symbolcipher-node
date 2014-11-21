@@ -6,7 +6,11 @@ var symbolCipher = {
 		var ct = "";
 		for ( i = 0; i < pt.length; i++) {
 			var match = pt.charAt(i).toUpperCase();
-			ct += this.conversion_table[match];
+			if(typeof this.conversion_table[match] !== 'undefined') {
+				ct += this.conversion_table[match];
+			} else {
+				ct += pt.charAt(i);
+			}
 		}
 		console.log(ct);
 	},
