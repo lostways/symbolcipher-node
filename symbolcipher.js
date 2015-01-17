@@ -1,5 +1,5 @@
 //converts symbols to ascii
-var symbolCipher = {
+module.exports = {
 	conversion_table: {"A":"å","B":"∫","C":"ç","D":"∂","E":"´","F":"ƒ","G":"©","H":"˙","I":"ˆ","J":"∆","K":"˚","L":"¬","M":"µ","N":"˜","O":"ø","P":"π","Q":"œ","R":"®","S":"ß","T":"†","U":"¨","V":"√","W":"∑","X":"≈","Y":"¥","Z":"Ω","1":"¡","2":"™","3":"£","4":"¢","5":"∞","6":"§","7":"¶","8":"•","9":"ª","0":"º","`":"`","-":"–","=":"≠","[":"“","]":"‘","\\":"«","/":"÷",";":"…","'":"æ",",":"≤",".":"≥"," ":" ",":":"Ú","?":"¿"},
 
 	encipher: function (pt) {
@@ -12,7 +12,7 @@ var symbolCipher = {
 				ct += pt.charAt(i);
 			}
 		}
-		console.log(ct);
+		return ct;
 	},
 
 	decipher: function(ct) {
@@ -24,6 +24,6 @@ var symbolCipher = {
 				}
 			}
 		}
-		console.log(pt);
+		return pt;
 	}
 };

@@ -1,0 +1,26 @@
+{
+  "name": "symbolcipher",
+  "version": "1.0.0",
+  "description": "symbol based cipher",
+  "main": "symbolcipher.js",
+  "scripts": {
+    "test": "jasmine-node spec/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lostways/symbolcipher-node.git"
+  },
+  "keywords": [
+    "crypto",
+    "cipher"
+  ],
+  "author": "Andrew Lowe <andrew@lostways.com> (http://lostways.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lostways/symbolcipher-node/issues"
+  },
+  "homepage": "https://github.com/lostways/symbolcipher-node",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}

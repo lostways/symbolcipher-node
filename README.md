@@ -1,11 +1,17 @@
 Symbol Cipher
 ============
 
-
 symbol cipher for discreet communication
 
-usage:
+Usage
+-----
 
-`symbolCipher.encipher("occultusnuntius");`
+```
+symbolCipher = require('symbolcipher');
 
-`symbolCipher.decipher("øçç¨¬†¨ß˜¨˜†ˆ¨ß");`
+//encode
+var encoded = symbolCipher.encipher("occultusnuntius");
+
+//decode
+var decoded = symbolCipher.decipher("øçç¨¬†¨ß˜¨˜†ˆ¨ß");
+```
